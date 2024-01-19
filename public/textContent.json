@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "Vrhunske torte za najslajše spomine",
+    "text": "Sveže Pripravljeno Vsak dan",
+    "btn1": "Ponudba",
+    "btn2": "Povpraševanje",
+    "cakes": ["cake1", "cake2", "cake3"]
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about our company and mission."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us through the contact form."
+  }
+}

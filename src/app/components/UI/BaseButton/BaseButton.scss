@@ -1,0 +1,11 @@
+.base-button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  background-color: var(--primary);
+
+  transition: var(--trans);
+  &:hover {
+    background-color: var(--gold);
+  }
+}

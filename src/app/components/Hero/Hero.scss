@@ -1,0 +1,25 @@
+.hero {
+  min-height: calc(100vh - 56px);
+  padding-top: 200px;
+  &-container {
+    .hero-main {
+      flex: 1;
+      min-height: 42vh;
+      .hero-btns {
+        max-width: 400px;
+        margin: 0 auto;
+        & > button,
+        & > a {
+          flex: 1;
+        }
+      }
+    }
+    .hero-cakes {
+      // margin-top: -10%;
+      transform: translateY(-45%);
+      .hero-cake_img {
+        max-width: 270px;
+      }
+    }
+  }
+}
