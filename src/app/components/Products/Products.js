@@ -9,7 +9,7 @@ import BaseButton from "../UI/BaseButton/BaseButton";
 
 export default function Products({ content }) {
   return (
-    <div className="base-bg-grey pb-4">
+    <div className="base-bg-grey py-4">
       <div className="base-container my-5" style={{ minHeight: "60vh" }}>
         <BaseSectionTitle text={content.title}></BaseSectionTitle>
         {/* <div className="products-list d-flex justify-content-around gap-5 mt-5"> */}

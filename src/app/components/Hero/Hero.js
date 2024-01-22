@@ -14,7 +14,7 @@ export default function Hero({ content }) {
   return (
     <div className="hero d-flex justify-content-center">
       <div className="hero-container w-100">
-        <div className="hero-main text-center base-bg-grey w-100">
+        <div className="hero-main text-center base-gradient w-100">
           <h2>{content.title}</h2>
           <p>{content.text}</p>
           <div className="hero-btns d-flex justify-content-center gap-4 mt-5">

@@ -1,10 +1,24 @@
-.base-section-title {
-  color: var(--primary);
-  font-size: 46px;
-}
-.title-line {
-  height: 3px;
-  background-color: var(--primary);
-  flex: 1;
-  border-radius: 3px;
+.base-section-title__container {
+  justify-content: center;
+  .base-section-title {
+    color: var(--primary);
+    font-size: 46px;
+  }
+  .title-line {
+    height: 3px;
+    background-color: var(--primary);
+    flex: 1;
+    border-radius: 3px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .base-section-title {
+      // border-left: 4px solid var(--primary);
+      // padding-left: 10px;
+      font-size: 36px;
+    }
+    .title-line {
+      display: none;
+    }
+  }
 }

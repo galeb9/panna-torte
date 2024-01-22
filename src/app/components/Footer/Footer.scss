@@ -1,0 +1,39 @@
+.footer {
+  p {
+    margin-bottom: 0 !important;
+  }
+  a {
+    transition: var(--trans);
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  &-items {
+    flex-wrap: wrap;
+    gap: 30px 80px;
+  }
+  &-links {
+    a {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    & > div {
+      flex-direction: column;
+      align-items: center;
+
+      .footer-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+      }
+      .social-links {
+        a {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
