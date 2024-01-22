@@ -17,9 +17,11 @@ export default function Products({ content }) {
           {content.cakes.map((cake, index) => (
             <div key={index} className="product">
               <Image priority src={cake2} alt="Cake image" />
-              <div className="products-image-nav d-flex gap-3 my-3">
+              <div className="products-image-nav d-flex gap-3 mb-3">
                 {cake.images.map((_, count) => (
-                  <div className="img-line flex-grow-1" key={count}></div>
+                  <div className="img-line__container flex-grow-1" key={count}>
+                    <div className="img-line flex-grow-1"></div>
+                  </div>
                 ))}
               </div>
               <h3>{cake.name}</h3>
