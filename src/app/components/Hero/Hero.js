@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import "./Hero.scss";
-import cake1 from "../../../../public/images/cake1.png";
-import cake2 from "../../../../public/images/cake2.png";
-import cake3 from "../../../../public/images/cake3.png";
+import cake1 from "../../../../public/images/hero/cake1.png";
+import cake2 from "../../../../public/images/hero/cake2.png";
+import cake3 from "../../../../public/images/hero/cake3.png";
 
 import BaseButton from "../UI/BaseButton/BaseButton";
 
@@ -25,8 +25,12 @@ export default function Hero({ content }) {
         <div className="base-container d-flex justify-content-center">
           <div className="hero-cakes d-flex gap-3">
             {images.map((cake, index) => (
-              <div key={index} className="hero-cake_img">
-                <Image key={index} src={cake} alt={`Image ${index}`} />
+              <div
+                key={index}
+                className="hero-cake_img text-center d-flex flex-column justify-content-between"
+              >
+                <Image priority key={index} src={cake} alt={`Image ${index}`} />
+                <div className="">1st</div>
               </div>
             ))}
           </div>

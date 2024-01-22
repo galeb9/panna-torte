@@ -1,0 +1,17 @@
+.info-container {
+  .info {
+    flex-wrap: wrap;
+    &-item {
+      flex: 1;
+    }
+    &-bg {
+      background-color: var(--primary);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      img {
+        width: max-content;
+      }
+    }
+  }
+}

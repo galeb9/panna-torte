@@ -1,0 +1,44 @@
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px 100px;
+
+  .product {
+    // max-width: 260px;
+    padding: 20px;
+    border-radius: var(--radius);
+    transition: var(--trans);
+    img {
+      padding: 0 40px;
+      transition: var(--trans);
+    }
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      background-color: snow;
+      img {
+        transform: translateY(-16px) scale(1.2);
+      }
+    }
+
+    .products-image-nav {
+      .img-line {
+        height: 3px;
+        border-radius: 10px;
+        background-color: grey;
+      }
+    }
+  }
+  .cake-link {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Two cakes per row on smaller screens */
+    // gap: 150px;
+  }
+}

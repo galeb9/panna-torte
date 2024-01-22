@@ -1,3 +1,6 @@
+import Products from "../components/Products/Products";
+const textContent = require("../../../public/textContent.json");
+
 export default function CakesList() {
-  return <h1>Cakes list</h1>;
+  return <Products content={textContent.products} />;
 }

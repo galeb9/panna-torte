@@ -3,9 +3,12 @@
   padding: 10px 20px;
   border-radius: var(--radius);
   background-color: var(--primary);
-
+  border: 2px solid transparent;
   transition: var(--trans);
+  font-weight: 700;
   &:hover {
-    background-color: var(--gold);
+    border: 2px solid var(--primary);
+    background-color: white;
+    color: var(--primary);
   }
 }
