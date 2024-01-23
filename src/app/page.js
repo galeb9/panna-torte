@@ -4,13 +4,14 @@ import Products from "./components/Products/Products";
 import Info from "./components/Info/Info";
 
 const textContent = require("../../public/textContent.json");
+const productsJson = require("../../public/products.json");
 
 export default function Home() {
   return (
     <main>
       <Hero content={textContent.home} />
       <AboutCta content={textContent.about}></AboutCta>
-      <Products content={textContent.products}></Products>
+      <Products content={productsJson}></Products>
       <Info content={textContent.info}></Info>
     </main>
   );

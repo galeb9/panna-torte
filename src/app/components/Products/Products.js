@@ -24,7 +24,7 @@ export default function Products({ content, bg }) {
                   </div>
                 ))}
               </div>
-              <h3>{cake.name}</h3>
+              <h4>{cake.name}</h4>
               <div className="d-flex justify-content-between my-3">
                 <div>{cake.price}</div>
                 <Link

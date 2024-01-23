@@ -1,0 +1,53 @@
+{
+  "title": "Ponudba",
+  "cakes": [
+    {
+      "id": "1",
+      "name": "Torta Extravagante",
+      "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
+      "price": "49.99",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "alergeni": ["Pšenica", "Jajca", "Mleko"]
+    },
+    {
+      "id": "2",
+      "name": "Torta Extravagante",
+      "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
+      "price": "49.99",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "alergeni": ["Pšenica", "Jajca", "Mleko"]
+    },
+    {
+      "id": "3",
+      "name": "Torta Extravagante",
+      "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
+      "price": "49.99",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "alergeni": ["Pšenica", "Jajca", "Mleko"]
+    },
+    {
+      "id": "4",
+      "name": "Torta Extravagante",
+      "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
+      "price": "49.99",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "alergeni": ["Pšenica", "Jajca", "Mleko"]
+    },
+    {
+      "id": "5",
+      "name": "Torta Extravagante",
+      "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
+      "price": "49.99",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "alergeni": ["Pšenica", "Jajca", "Mleko"]
+    },
+    {
+      "id": "6",
+      "name": "Torta Extravagante",
+      "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
+      "price": "49.99",
+      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "alergeni": ["Pšenica", "Jajca", "Mleko"]
+    }
+  ]
+}

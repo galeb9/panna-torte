@@ -42,9 +42,9 @@ img {
   min-width: 340px;
 }
 
-.base-window {
-  /* min-height: 50vh; */
-}
+/* .base-window {
+  min-height: 50vh;
+} */
 
 .base-bg-grey {
   background: linear-gradient(

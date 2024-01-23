@@ -11,47 +11,6 @@
     "btn": "Izvedi več",
     "text": "Sva ljubitelja dobre hrane in sladic, ki sva združila moči v ustvarjanju okusnih tort.\n\nNajino delo ne predstavlja le poklica, ampak način izražanja kreativnosti in ljubezni do kulinarike. Upava, da bodo najine torte polepšale vaše posebne trenutke in prinesle kanček sladkega razvajanja v vaše življenje.\n\nVabljeni, da okusite najine unikatne kreacije in delite z nami užitek v dobri hrani."
   },
-  "products": {
-    "title": "Ponudba",
-    "cakes": [
-      {
-        "id": "1",
-        "name": "Torta Extravagante",
-        "price": "49.99",
-        "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
-      },
-      {
-        "id": "2",
-        "name": "Torta Extravagante",
-        "price": "49.99",
-        "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
-      },
-      {
-        "id": "3",
-        "name": "Torta Extravagante",
-        "price": "49.99",
-        "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
-      },
-      {
-        "id": "1",
-        "name": "Torta Extravagante",
-        "price": "49.99",
-        "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
-      },
-      {
-        "id": "2",
-        "name": "Torta Extravagante",
-        "price": "49.99",
-        "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
-      },
-      {
-        "id": "3",
-        "name": "Torta Extravagante",
-        "price": "49.99",
-        "images": ["image1.jpg", "image2.jpg", "image3.jpg"]
-      }
-    ]
-  },
   "info": {
     "title": "Dostava in plačilo",
     "items": [
