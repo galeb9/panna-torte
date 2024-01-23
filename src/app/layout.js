@@ -1,10 +1,14 @@
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./globals.css";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+import "./globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Panna torte",
@@ -14,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
         <div style={{ minHeight: "calc(100vh - 56px)" }}>{children}</div>
         <Footer />

@@ -2,6 +2,9 @@
   .nav-link {
     transition: var(--trans);
     padding-bottom: 5px !important;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+
     &:hover {
       color: var(--primary) !important;
     }
@@ -11,6 +14,6 @@
     transition: var(--trans);
     color: var(--primary) !important;
     border-bottom: 2px solid var(--primary);
-    font-weight: 700;
+    // font-weight: 700;
   }
 }

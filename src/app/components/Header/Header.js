@@ -4,8 +4,13 @@ import "./Header.scss";
 import Link from "next/link";
 import BaseButton from "../UI/BaseButton/BaseButton";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Header() {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
   const pathname = usePathname();
 
   const links = [
