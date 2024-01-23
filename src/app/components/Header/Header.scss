@@ -1,3 +1,16 @@
-.navbar-nav .nav-item .active {
-  color: var(--primary) !important;
+.navbar-nav .nav-item {
+  .nav-link {
+    transition: var(--trans);
+    padding-bottom: 5px !important;
+    &:hover {
+      color: var(--primary) !important;
+    }
+  }
+
+  .active {
+    transition: var(--trans);
+    color: var(--primary) !important;
+    border-bottom: 2px solid var(--primary);
+    font-weight: 700;
+  }
 }

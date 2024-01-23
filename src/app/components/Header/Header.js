@@ -7,8 +7,6 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  // console.log("p: ", pathname);
-  // console.log("w: ", window.location.pathname);
 
   const links = [
     { text: "Domov", route: "/" },
@@ -35,7 +33,7 @@ export default function Header() {
                 <li className="nav-item" key={index}>
                   <Link
                     className={`${
-                      pathname == `/${link.route}` ? "active" : ""
+                      pathname === `${link.route}` ? "active" : ""
                     } nav-link`}
                     href={link.route}
                     aria-current="page"

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <div style={{ minHeight: "calc(100vh - 56px)" }}>{children}</div>
         <Footer />
       </body>
     </html>

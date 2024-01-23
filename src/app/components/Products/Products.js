@@ -7,9 +7,9 @@ import cake2 from "../../../../public/images/hero/cake2.png";
 import "./Products.scss";
 import BaseButton from "../UI/BaseButton/BaseButton";
 
-export default function Products({ content }) {
+export default function Products({ content, bg }) {
   return (
-    <div className="base-bg-grey py-4">
+    <div className={`py-4 ${bg ? "base-bg-grey" : ""}`}>
       <div className="base-container my-5" style={{ minHeight: "60vh" }}>
         <BaseSectionTitle text={content.title}></BaseSectionTitle>
         {/* <div className="products-list d-flex justify-content-around gap-5 mt-5"> */}
