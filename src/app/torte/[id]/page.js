@@ -4,8 +4,10 @@ import "./SingleCake.scss";
 
 import BaseButton from "../../components/UI/BaseButton/BaseButton";
 import Image from "next/image";
-import Link from "next/link";
+
+import cake1 from "../../../../public/images/hero/cake1.png";
 import cake2 from "../../../../public/images/hero/cake2.png";
+import cake3 from "../../../../public/images/hero/cake3.png";
 
 export default function Cake({ params }) {
   const { id } = params;
@@ -13,10 +15,111 @@ export default function Cake({ params }) {
   const cake = productsJson.cakes.find((cake) => cake.id === id);
   console.log(cake);
 
+  const dummyImages = [cake1, cake2, cake3];
+
   return (
     <div className="single-cake base-container d-flex py-5">
       <div className="cake-col">
-        <div className=" d-flex justify-content-center">
+        {/* <div className="custom-carousel">
+          <div
+            id="carouselExampleIndicators"
+            className="carousel slide carousel-dark"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="img-container">
+                  <Image
+                    priority
+                    src={cake1}
+                    alt="Cake image"
+                    className="cake-main__img d-block w-100"
+                  />
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="img-container">
+                  <Image
+                    priority
+                    src={cake2}
+                    alt="Cake image"
+                    className="cake-main__img d-block w-100"
+                  />
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="img-container">
+                  <Image
+                    priority
+                    src={cake3}
+                    alt="Cake image"
+                    className="cake-main__img d-block w-100"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="carousel-indicators d-block">
+              <div className="d-flex gap-3">
+                <div>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <Image priority src={cake1} alt="Cake image" />
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <Image priority src={cake2} alt="Cake image" />
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <Image priority src={cake3} alt="Cake image" />
+                </div>
+              </div>
+            </div>
+
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div> */}
+
+        <div className="d-flex justify-content-center">
           <Image
             priority
             src={cake2}

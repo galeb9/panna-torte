@@ -86,7 +86,7 @@ export default function Footer() {
                 <Image
                   src={location}
                   alt="Custom SVG Image"
-                  className="me-1"
+                  className=""
                   style={{ maxWidth: "18px" }}
                 />
                 location
