@@ -17,8 +17,8 @@ export default function BaseButton({
 
   if (isLink) {
     return (
-      <Link href={href}>
-        <a {...buttonProps}>{children}</a>
+      <Link href={href} {...buttonProps}>
+        {children}
       </Link>
     );
   }

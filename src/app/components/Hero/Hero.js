@@ -19,7 +19,9 @@ export default function Hero({ content }) {
           <p>{content.text}</p>
           <div className="hero-btns d-flex justify-content-center gap-4 mt-5">
             <BaseButton>{content.btn1}</BaseButton>
-            <BaseButton>{content.btn2}</BaseButton>
+            <BaseButton isLink href="povprasevanje">
+              {content.btn2}
+            </BaseButton>
           </div>
         </div>
         <div className="base-container d-flex justify-content-center">
