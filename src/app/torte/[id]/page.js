@@ -15,7 +15,7 @@ import { useState } from "react";
 
 export default function Cake({ params }) {
   const dummyImages = [cake1, cake2, cake3];
-  const [sectedImage, setSelectedImage] = useState(dummyImages[0]);
+  const [selectedImage, setSelectedImage] = useState(dummyImages[0]);
 
   const { id } = params;
   const quantity = 1;
@@ -23,6 +23,8 @@ export default function Cake({ params }) {
   // console.log(cake);
 
   const handleImageClick = (img) => {
+    console.log(selectedImage);
+
     setSelectedImage(img);
   };
 
@@ -32,7 +34,7 @@ export default function Cake({ params }) {
         <div className="cake-main__img-container d-flex justify-content-center">
           <Image
             priority
-            src={sectedImage}
+            src={selectedImage}
             alt="Cake image"
             className="cake-main__img"
           />
@@ -44,7 +46,11 @@ export default function Cake({ params }) {
               key={count}
               onClick={() => handleImageClick(img)}
             >
-              <div className="img-line flex-grow-1"></div>
+              <div
+                className={`${
+                  selectedImage === `${img}` ? "img-active" : ""
+                } img-line flex-grow-1`}
+              ></div>
               <div className="d-flex justify-content-center">
                 <Image
                   priority
