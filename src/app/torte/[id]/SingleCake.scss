@@ -13,45 +13,31 @@
     width: 50%;
 
     &:nth-of-type(1) {
-      .cake-main__img {
-        max-width: 300px;
+      .cake-main__img-container {
+        max-width: 400px;
+        background-color: grey;
+        margin: 0 auto;
+        transition: opacity 0.5s ease-in-out;
       }
-      // .custom-carousel {
-      //   // background-color: lightblue;
-      //   padding-top: 50px 0;
-      //   .carousel-item {
-      //     .img-container {
-      //       height: 40vh;
-      //       display: flex;
-      //       align-items: center;
-      //       justify-content: center;
-      //       img {
-      //         margin: 0 auto;
-      //       }
-      //     }
-      //   }
-      //   .carousel-indicators {
-      //     position: relative;
-      //     & > div > div > button {
-      //       height: 3px;
-      //       background-color: var(--primary);
-      //       width: 100%;
-      //     }
-      //   }
-      //   .carousel-control-prev .carousel-control-prev-icon,
-      //   .carousel-control-next .carousel-control-next-icon {
-      //     border-radius: 30px;
-      //   }
-      // }
+
+      .cake-main__img {
+      }
+      .cake-main__img-container.fade-out {
+        opacity: 0;
+      }
+      .cake-main__img-container.fade-in {
+        opacity: 1;
+      }
+
       .cake-image-nav {
-        // border: 1px solid black;
-        align-items: end;
+        max-width: 80%;
+        margin: 20px auto;
         .cake-image-nav__img {
-          max-width: 70%;
+          max-width: 90%;
         }
         .img-line__container {
           cursor: pointer;
-          padding: 10px 0;
+          // padding: 10px 0;
           &:hover .img-line {
             // height: 8px;
             background-color: var(--primary);
