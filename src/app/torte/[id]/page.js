@@ -1,30 +1,24 @@
 "use client";
 
-const productsJson = require("../../../../public/products.json");
+const productsData = require("../../../../public/products.json");
 
 import "./SingleCake.scss";
 
 import BaseButton from "../../components/UI/BaseButton/BaseButton";
 import Image from "next/image";
 
-import cake1 from "../../../../public/images/hero/cake1.png";
-import cake2 from "../../../../public/images/hero/cake2.png";
-import cake3 from "../../../../public/images/hero/cake3.png";
-
 import { useState } from "react";
 
 export default function Cake({ params }) {
-  const dummyImages = [cake1, cake2, cake3];
-  const [selectedImage, setSelectedImage] = useState(dummyImages[0]);
-
   const { id } = params;
+  const cake = productsData.cakes.find((cake) => cake.id === id);
+  const images = cake.images;
+  const [selectedImage, setSelectedImage] = useState(images[0]);
+
   const quantity = 1;
-  const cake = productsJson.cakes.find((cake) => cake.id === id);
-  // console.log(cake);
 
   const handleImageClick = (img) => {
-    console.log(selectedImage);
-
+    // console.log(selectedImage);
     setSelectedImage(img);
   };
 
@@ -34,13 +28,16 @@ export default function Cake({ params }) {
         <div className="cake-main__img-container d-flex justify-content-center">
           <Image
             priority
-            src={selectedImage}
+            src={`/images/cakes/${selectedImage}`}
             alt="Cake image"
             className="cake-main__img"
+            quality={100}
+            width={300}
+            height={300}
           />
         </div>
         <div className="cake-image-nav d-flex gap-3 ">
-          {dummyImages.map((img, count) => (
+          {cake.images.map((img, count) => (
             <div
               className="img-line__container flex-grow-1 "
               key={count}
@@ -54,9 +51,12 @@ export default function Cake({ params }) {
               <div className="d-flex justify-content-center">
                 <Image
                   priority
-                  src={img}
+                  src={`/images/cakes/${img}`}
                   alt="Cake image"
                   className="cake-image-nav__img mt-3"
+                  width={300}
+                  height={300}
+                  quality={1}
                 />
               </div>
             </div>

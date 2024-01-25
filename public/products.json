@@ -6,7 +6,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": ["cake1.png", "cake2.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -14,7 +14,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": ["cake1.png", "cake2.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -22,7 +22,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": ["cake1.png", "cake2.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -30,7 +30,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": ["cake1.png", "cake2.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -38,7 +38,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": ["cake1.png", "cake2.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -46,7 +46,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+      "images": ["cake1.png", "cake2.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     }
   ]
