@@ -8,46 +8,71 @@
     padding: 20px;
     border-radius: var(--radius);
     transition: var(--trans);
-    img {
-      padding: 0 40px;
-      transition: var(--trans);
+    // img {
+    //   padding: 0 40px;
+    //   transition: var(--trans);
+    // }
+    .product-image {
+      .next-prev-btns {
+        transition: var(--trans);
+        opacity: 0;
+        .chevron-container > img {
+          padding: 18px;
+        }
+      }
+      .product-image__img {
+        width: 60%;
+        height: 60%;
+      }
+      .product-image__img-container {
+        width: auto;
+        height: auto;
+        padding: 10px;
+      }
     }
-
     &:hover {
+      .product-image .next-prev-btns {
+        opacity: 1;
+      }
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
       background-color: snow;
-      img {
-        transform: translateY(-16px) scale(1.2);
-      }
+      // img {
+      // transform: translateY(-16px) scale(1.2);
+      // }
     }
 
-    .products-image-nav {
-      min-height: 30px;
-      align-items: end;
-      .img-line__container {
-        cursor: pointer;
-        padding: 10px 0;
-        .img-line {
-          transition: var(--trans);
-          height: 3px;
-          border-radius: 10px;
-          background-color: grey;
-        }
-        &:hover .img-line {
-          height: 8px;
-          background-color: var(--primary);
-        }
-      }
+    // .products-image-nav {
+    //   min-height: 30px;
+    //   align-items: end;
+    //   .img-line__container {
+    //     cursor: pointer;
+    //     padding: 10px 0;
+    //     .img-line {
+    //       transition: var(--trans);
+    //       height: 3px;
+    //       border-radius: 10px;
+    //       background-color: grey;
+    //     }
+    //     &:hover .img-line {
+    //       height: 8px;
+    //       background-color: var(--primary);
+    //     }
+    //   }
 
-      .img-active {
-        background-color: var(--primary);
-      }
-    }
+    //   .img-active {
+    //     background-color: var(--primary);
+    //   }
+    // }
   }
   .cake-link {
     color: var(--primary);
     font-weight: 700;
-    text-decoration: underline;
+    border-bottom: 2px solid var(--primary);
+    padding: 0;
+    transition: var(--trans);
+    &:hover {
+      padding: 0 10px;
+    }
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(
