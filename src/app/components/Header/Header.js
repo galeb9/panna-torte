@@ -1,10 +1,12 @@
 "use client";
-
-import "./Header.scss";
-import Link from "next/link";
-import BaseButton from "../UI/BaseButton/BaseButton";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+
+import Link from "next/link";
+import Logo from "../Logo/Logo.js";
+import BaseButton from "../UI/BaseButton/BaseButton";
+
+import "./Header.scss";
 
 export default function Header() {
   useEffect(() => {
@@ -22,11 +24,9 @@ export default function Header() {
 
   return (
     <div className="sticky-top bg-white">
-      <nav className="base-container navbar navbar-expand-lg">
+      <nav className="base-container navbar navbar-expand-lg px-0">
         <div className="container-fluid">
-          <Link className="navbar-brand" href="/">
-            Logo
-          </Link>
+          <Logo />
 
           <div
             className="collapse navbar-collapse"

@@ -13,6 +13,7 @@ export async function sendMail({ to, name, subject, body }) {
       pass: SMTP_PASSWORD,
     },
   });
+
   try {
     const testResult = await transport.verify();
     console.log(testResult);
@@ -24,7 +25,7 @@ export async function sendMail({ to, name, subject, body }) {
   try {
     await new Promise((resolve, reject) => {
       // send mail
-      transporter.sendMail(mailOptions, (err, response) => {
+      transport.sendMail(mailOptions, (err, response) => {
         if (err) {
           reject(err);
         } else {

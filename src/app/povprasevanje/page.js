@@ -6,23 +6,11 @@ import Image from "next/image";
 import BaseButton from "../components/UI/BaseButton/BaseButton";
 import BaseSectionTitle from "../components/UI/BaseSectionTitle/BaseSectionTItle";
 import sideImg from "../../../public/images/form/sideImg.png";
-
 import { useState } from "react";
 
 export default function Povprasevanje() {
-  // const send = async () => {
-  //   "use server";
-  //   console.log("clicked");
-
-  //   await sendMail({
-  //     to: "matej.grimsic@gmail.com",
-  //     name: "stranka",
-  //     subject: "test cake",
-  //     body: "<h1>A tasty cake</h1>",
-  //   });
-  // };
-
   const [formData, setFormData] = useState({
+    product: "",
     ime: "",
     email: "",
     telefon: "",
@@ -38,7 +26,18 @@ export default function Povprasevanje() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form data submitted:", formData);
+
+    sendMail({ formData });
+  };
+  const sendMail = async (formData) => {
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    console.log(await response.json());
   };
 
   return (
@@ -50,14 +49,28 @@ export default function Povprasevanje() {
         <BaseSectionTitle text="Pošljite povpraševanje"></BaseSectionTitle>
 
         <form onSubmit={handleSubmit}>
-          <div className="containe my-4">
-            <div className="row gx-4 mb-4">
+          <div className="container my-4">
+            <div className="row mb-4">
+              <div className="col">
+                <input
+                  type="text"
+                  name="product"
+                  value={formData.product}
+                  placeholder="Izbran produkt"
+                  onChange={handleChange}
+                  className="form-input w-100"
+                />
+              </div>
+              <div className="col"></div>
+            </div>
+
+            <div className="row mb-4">
               <div className="col">
                 <input
                   type="text"
                   name="ime"
                   value={formData.ime}
-                  placeholder="Ime"
+                  placeholder="Vaše ime"
                   onChange={handleChange}
                   className="form-input w-100"
                 />
@@ -74,7 +87,7 @@ export default function Povprasevanje() {
               </div>
             </div>
 
-            <div className="row gx-4 mb-4">
+            <div className="row mb-4">
               <div className="col">
                 <input
                   type="tel"
@@ -85,6 +98,9 @@ export default function Povprasevanje() {
                   className="form-input col-6 w-100"
                 />
               </div>
+              <div className="col"></div>
+            </div>
+            <div className="row mb-4">
               <div className="col">
                 <input
                   type="date"
@@ -95,6 +111,7 @@ export default function Povprasevanje() {
                   className="form-input col-6 w-100"
                 />
               </div>
+              <div className="col"></div>
             </div>
             {/* for radio */}
             <div className="form-radios-container py-2 mb-4">

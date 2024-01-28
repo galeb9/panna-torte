@@ -1,20 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-
-import "./Footer.scss";
+import Logo from "../Logo/Logo.js";
 
 import tel from "../../../../public/images/footer/tel.svg";
 import mail from "../../../../public/images/footer/mail.svg";
-
 import fb from "../../../../public/images/footer/fb.svg";
 import insta from "../../../../public/images/footer/insta.svg";
 import location from "../../../../public/images/footer/location.svg";
+
+import "./Footer.scss";
 
 export default function Footer() {
   return (
     <div className="footer base-bg-grey py-5">
       <div className="base-container d-flex justify-content-between gap-5">
-        <div>Logo</div>
+        <Logo />
         <div className="footer-items d-flex">
           <div>
             <h5 className="mb-3">Delovni čas</h5>
