@@ -18,6 +18,9 @@
       display: none;
     }
     form {
+      label {
+        cursor: pointer;
+      }
       .form-input,
       textarea {
         border: 2px solid var(--primary) !important;
@@ -31,6 +34,11 @@
       // }
       .form-radios-container {
         // color: var(--primary);
+        .maps-link {
+          color: var(--primary);
+          letter-spacing: 2px;
+          font-weight: 700;
+        }
       }
       textarea {
         width: 100%;

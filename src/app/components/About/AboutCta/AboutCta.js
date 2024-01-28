@@ -13,7 +13,9 @@ export default function AboutCta({ content }) {
       <div className="d-md-flex gap-5 mt-5">
         <div className="about-cta__col w-50">
           <p style={{ whiteSpace: "pre-line" }}>{content.text}</p>
-          <BaseButton className="d-none d-md-block">{content.btn}</BaseButton>
+          <BaseButton isLink href="o-nas" className="d-none d-md-block">
+            {content.btn}
+          </BaseButton>
         </div>
         <div className="about-cta__col w-50">
           <div className="about-cta-img d-flex ">

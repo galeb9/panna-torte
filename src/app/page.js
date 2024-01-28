@@ -3,8 +3,8 @@ import AboutCta from "./components/About/AboutCta/AboutCta";
 import Products from "./components/Products/Products";
 import Info from "./components/Info/Info";
 
-const textContent = require("../../public/textContent.json");
-const productsJson = require("../../public/products.json");
+const textContent = require("../../public/json/textContent.json");
+const productsJson = require("../../public/json/products.json");
 
 export default function Home() {
   return (

@@ -9,9 +9,10 @@ export default function BaseButton({
   anchorLink,
   children,
   className,
+  btnCol = "action",
 }) {
   const buttonProps = {
-    className: `base-button shadow ${className}`,
+    className: `base-button shadow ${className} ${"btn--" + btnCol}`,
     onClick,
   };
 

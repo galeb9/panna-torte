@@ -1,18 +1,41 @@
 .base-button {
-  color: white;
-  padding: 10px 40px;
+  padding: 6px 20px;
   border-radius: var(--radius);
-  background-color: var(--primary);
-  border: 2px solid transparent;
+  border: 2.5px solid transparent;
   transition: var(--trans);
   font-weight: 700;
+  color: white;
   &:hover {
-    border: 2px solid var(--primary);
     background-color: white;
-    color: var(--primary);
+    color: var(--action);
+    transform: translateY(-2px) scaleX(1.05);
   }
   @media screen and (max-width: 768px) {
     font-size: 14px;
     padding: 10px 20px;
+  }
+}
+
+.btn--action {
+  background-color: var(--action);
+  &:hover {
+    color: var(--action);
+    border-color: var(--action);
+  }
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  &:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+}
+
+.btn--secondary {
+  background-color: var(--secondary);
+  &:hover {
+    color: var(--secondary);
+    border-color: var(--secondary);
   }
 }

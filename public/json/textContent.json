@@ -1,7 +1,7 @@
 {
   "home": {
-    "title": "Vrhunske torte za najslajše spomine",
-    "text": "Sveže Pripravljeno Vsak dan",
+    "title": "Panna Cakes",
+    "text": "Okusi Sreče v vsakem grižljaju",
     "btn1": "Ponudba",
     "btn2": "Povpraševanje",
     "cakes": ["cake1", "cake2", "cake3"]

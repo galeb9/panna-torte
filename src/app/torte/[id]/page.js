@@ -3,7 +3,7 @@ import "./SingleCake.scss";
 
 import BaseButton from "@/app/components/UI/BaseButton/BaseButton";
 import ProdcutImage from "@/app/components/ProdcutImage/ProdcutImage";
-const productsData = require("../../../../public/products.json");
+const productsData = require("../../../../public/json/products.json");
 
 export default function Cake({ params }) {
   const { id } = params;

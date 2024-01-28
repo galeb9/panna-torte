@@ -6,7 +6,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["cake1.png", "cake2.png", "cake3.png"],
+      "images": ["cake2.png", "cake1.png", "cake3.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -14,7 +14,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["cake1.png", "cake2.png", "cake3.png"],
+      "images": ["cake3.png", "cake2.png", "cake1.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {
@@ -38,7 +38,7 @@
       "name": "Torta Extravagante",
       "desc": "Slastna torta, ki vas bo očarala s harmonijo nežnih plasti biskvita in krem, zaključena s prefinjenim dekorjem.",
       "price": "49.99",
-      "images": ["cake1.png", "cake2.png", "cake3.png"],
+      "images": ["cake2.png", "cake3.png", "cake1.png"],
       "alergeni": ["Pšenica", "Jajca", "Mleko"]
     },
     {

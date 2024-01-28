@@ -1,15 +1,52 @@
 .base-section-title__container {
   justify-content: center;
   .base-section-title {
-    color: var(--primary);
-    font-size: 46px;
+    color: var(--action);
+    font-size: 56px;
   }
   .title-line {
     height: 3px;
-    background-color: var(--primary);
+    background-color: var(--action);
     flex: 1;
     border-radius: 3px;
   }
+  // .holder {
+  //   position: relative;
+  //   width: 200px;
+  //   height: 50px;
+  //   top: 25px;
+  //   .tinyLine {
+  //     position: absolute;
+  //     /* Cuts off the bottom half of the pattern */
+  //     height: 20px;
+  //     /* For better cross browser consistency, make it larger with width.  */
+  //     width: 1000%;
+  //     /* And then scale it back down with scale, recentering with translateX. */
+  //     transform: translateX(-45%) scale(0.1);
+  //   }
+  //   .tinyLine1 {
+  //     background: linear-gradient(
+  //       45deg,
+  //       transparent,
+  //       transparent 49%,
+  //       red 49%,
+  //       transparent 51%
+  //     );
+  //   }
+  //   .tinyLine2 {
+  //     background: linear-gradient(
+  //       -45deg,
+  //       transparent,
+  //       transparent 49%,
+  //       red 49%,
+  //       transparent 51%
+  //     );
+  //   }
+  //   .tinyLine {
+  //     /* Must be after background definition. */
+  //     background-size: 40px 40px;
+  //   }
+  // }
 
   @media screen and (max-width: 768px) {
     .base-section-title {

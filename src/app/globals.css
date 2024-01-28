@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
 :root {
-  --primary: rgba(223, 76, 147, 0.85);
+  --primary: #857fe8;
+  --secondary: #f8a2f0;
+  --action: #ee56cc;
+
   --gold: rgb(189, 167, 42);
 
   --bg-gradient: linear-gradient(white, #bebebe93);
@@ -12,10 +17,13 @@
   padding: 0;
   margin: 0;
 }
+body {
+  color: #4d3467 !important;
+}
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 button {
   outline: none;
@@ -25,6 +33,12 @@ button {
 img {
   width: 100%;
   height: auto;
+}
+/* titles */
+h1,
+h2,
+h3 {
+  font-family: "Caveat", cursive;
 }
 /* 
 @media (prefers-color-scheme: dark) {
@@ -55,6 +69,19 @@ img {
 }
 .base-gradient {
   background: var(--bg-gradient);
+}
+
+.form-select:focus,
+.form-control:focus,
+.date-form-input:focus {
+  border-color: var(--primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--secondary);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 /* @media screen and (max-width: 768px) {

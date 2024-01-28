@@ -1,10 +1,23 @@
 .hero {
-  // min-height: calc(100vh - 56px);
-  padding-top: 200px;
   &-container {
     .hero-main {
+      padding-top: 10vh;
+      min-height: calc(70vh - 56px);
       flex: 1;
-      min-height: 42vh;
+      h1 {
+        font-size: 76px;
+        color: #4d3467;
+      }
+      p {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #4d3467;
+      }
+      .logo-container {
+        width: max-content;
+        max-width: 100%;
+        margin: 0 auto;
+      }
       .hero-btns {
         max-width: 400px;
         margin: 0 auto;
